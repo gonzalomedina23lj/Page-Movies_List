@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Lobster&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Lobster&family=Open+Sans:wght@300;400;700&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-roboto: "Roboto Slab", serif;
+    --font-raleway: "Raleway", sans-serif;
+  }
+
+body {
+    font-family: var(--font-roboto);
+    background-color: #264a6e;
+}
+
+h1{
+    color:rgb(197, 184, 184);
+    font: "Raleway", sans-serif;
+    font-size: 4.5vw;
+    text-shadow: 2px 3.5px rgb(37, 41, 44);
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    
+}
+
+.app{
+    width: 100%;
+    height: auto;
+    padding: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search{
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0 2rem 0;
+    padding: 3rem 0 3rem 0;
+    border-radius: 2rem;
+    background: #a3b2c0;
+    -webkit-box-shadow: 5px 5px 7px #4f586b, -5px -5px 7px #222527;
+    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #303e47;
+}
+
+.search input{
+    font-family: var(--font-raleway);
+    width: 80%;
+    height: 4vh;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    
+
+}
+
+.empty{
+    color:rgb(197, 184, 184);
+    font: "Raleway", sans-serif;
+    font-size: 2.5vw;
+    text-shadow: 1px 1px rgb(37, 41, 44);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.prueb
