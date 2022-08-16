@@ -1,8 +1,12 @@
 <div>
   <div class="search">
-    <input [formControl]="searchCharacter" type="text" placeholder="Search..." />
+    <input
+      [formControl]="searchCharacter"
+      type="text"
+      placeholder="Search..."
+    />
   </div>
-  <div class="container">
-    <app-file-movie *ngFor="let movie of movies" [movie]="movie"></app-file-movie>
-  </div>
+    <ng-container class="container" *ngFor="let movie of movies$ | async">
+      <app-file-movie [movie]="movie"></app-file-movie>
+    </ng-container>
 </div>

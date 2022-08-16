@@ -1,0 +1,23 @@
+.movie {
+    overflow: hidden;
+    margin: 15px 0 25px 0;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.120, 0.800, 0.4, 1);
+    box-shadow: 0px 16px 10px -5px rgba(0, 0, 0, 0.281);
+  }
+
+  .movie img{
+    border-radius: 10px;
+
+}
+.movie:hover {
+    box-shadow: 0px 16px 10px -5px rgba(0, 0, 0, 0.281);
+    transform: scale(1.05, 1.05);
+  }
+
+  h3{
+    font-size: 1.40em;
+    font-weight: bold;
+    color: lightcyan;
+    margin-bottom: 10px;
+  }

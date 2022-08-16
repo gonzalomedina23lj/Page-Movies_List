@@ -1,21 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Movie } from 'src/app/interfaces/movie';
-
-
+import { Component, Input, OnInit } from "@angular/core";
+import { Movie } from "src/app/interfaces/movie";
 
 @Component({
-  selector: 'app-file-movie',
-  templateUrl: './file-movie.component.html',
-  styleUrls: ['./file-movie.component.css']
+  selector: "app-file-movie",
+  templateUrl: "./file-movie.component.html",
+  styleUrls: ["./file-movie.component.css"],
 })
 export class FileMovieComponent implements OnInit {
+  @Input("movie") movie!: Movie;
 
-  @Input('movie') movie:Movie[];
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log(this.movie)
+    console.log(this.movie);
   }
-
 }

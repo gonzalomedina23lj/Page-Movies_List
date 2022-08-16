@@ -1,7 +1,8 @@
 import { HttpClient, HttpHandler } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { FormControl } from "@angular/forms";
-import { debounceTime, distinct, filter, switchMap } from "rxjs";
+import { Observable } from "rxjs";
+import { debounceTime, distinct, filter, switchMap } from "rxjs/operators";
 import { MovieService } from "src/app/services/movie.service";
 import { Movie } from "src/app/interfaces/movie";
 
@@ -12,16 +13,17 @@ import { Movie } from "src/app/interfaces/movie";
 })
 export class MoviesComponent implements OnInit {
   public searchCharacter = new FormControl();
+  public movies$!: Observable<Movie[]>;
 
   constructor(private movieService: MovieService) {}
 
   ngOnInit(): void {
-    this.searchCharacter.valueChanges
+    this.movies$ = this.searchCharacter.valueChanges
       .pipe(
-        filter((searchCharacter:string) => searchCharacter.length > 3),
+        filter((searchCharacter: string) => searchCharacter.length > 3),
         debounceTime(400),
         distinct(),
         switchMap((response) => this.movieService.getMovies(response ?? ""))
-      ).subscribe();
+      )
   }
 }
