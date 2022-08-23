@@ -3,9 +3,9 @@
         <h3>{{ movie.Title }}</h3>
     </div>
     <div>
-        <img [src]="movie.Poster" [alt]="movie.Title">
+        <img src="{{ getPoster() }}" [alt]="movie.Title">
     </div>
-    <div>
+    <div class="info-movie">
         <p>{{ movie.Year }}</p>
         <span>{{ movie.Type | titlecase }}</span>
     </div>

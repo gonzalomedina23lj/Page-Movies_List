@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FileMovieComponent } from './components/file-movie/file-movie.component';
-import { MoveFileComponent } from './components/move-file/move-file.component';
 import { MoviesComponent } from './components/movies/movies.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { MoviesComponent } from './components/movies/movies.component';
     AppComponent,
     MoviesComponent,
     FileMovieComponent,
-    MoveFileComponent
   ],
   imports: [
     BrowserModule,

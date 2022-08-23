@@ -14,4 +14,14 @@ export class FileMovieComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.movie);
   }
+
+  getPoster(){
+    if (this.movie.Poster === 'N/A') {
+      return 'https://via.placeholder.com/300x444';  
+    } else {
+      return this.movie.Poster;
+    }
+  }
 }
+
+
