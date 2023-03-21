@@ -1,7 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Fjalla+One&family=Lobster&family=Open+Sans:wght@300;400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&display=swap');
 
 
 *{
@@ -10,74 +8,33 @@
 }
 
 :root {
-    --font-cinzel: 'Edu NSW ACT Foundation', sans-serif;
-    --color-black: 
+    --first-color: #232931;
+    --second-color: #393e46;
+    --third-color:#2292A4;
+    --fourth-color:#eeeeee;
+    
   }
 
 
 body {
-    font-family: var(--font-cinzel);
-    background-color: rgb(57, 62, 70);
+    font-family: 'Arima Madurai', cursive;
+    background-image: linear-gradient(to top, var(--first-color) 0%, var(--third-color) 100%);
+    background-attachment: fixed;
 }
 
-h1{
-    color:rgb(0, 173, 181);
-    font: "Raleway", sans-serif;
-    font-size: 4.5vw;
-    text-shadow: 2px 3.5px rgb(34, 40, 49);
-    font-weight: bold;
-    letter-spacing: 2px;
-    line-height: 1;
-    text-align: center;
-    text-shadow: 8px 8px 10px rgba(34,40,49,0.89);
-    
-}
-
-.app{
+.container {
+    margin: 0 auto;
     width: 100%;
-    height: auto;
-    padding: 20px 0 40px 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-.search{
-    width: 60vw;
-    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0 2rem 0;
-    padding: 3rem 0 3rem 0;
-    border-radius: 2rem;
-    background: rgb(0, 173, 181);
-    box-shadow: -2px -1px 40px 20px rgba(34,40,49,0.73);
-    -webkit-box-shadow: -2px -1px 40px 20px rgba(34,40,49,0.73);
-    -moz-box-shadow: -2px -1px 40px 20px rgba(34,40,49,0.73);
 }
 
-.search input{
-    font-family: var(--font-cinzel);
-    width: 80%;
-    height: 4vh;
-    font-size: 1.5rem;
-    font-weight: 400;
-    border: 2px solid;
-    border-radius: 0.5rem;
-    
-
-}
-
-
-.empty{
-    color:rgb(197, 184, 184);
-    font: "Raleway", sans-serif;
-    font-size: 2.5vw;
-    text-shadow: 1px 1px rgb(37, 41, 44);
-    font-weight: bold;
-    letter-spacing: 2px;
-
+.box{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 app-file-movie{

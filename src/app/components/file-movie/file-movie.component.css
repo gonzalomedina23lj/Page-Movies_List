@@ -1,13 +1,14 @@
 .movie {
-    width: 430px;
-    height: 580px;
+    width: 470px;
+    height: 100%;
     overflow: hidden;
     margin: 15px 0 25px 0;
-    border: none;
-    transition: all 0.4s cubic-bezier(0.120, 0.800, 0.4, 1);
-    box-shadow: 0px 16px 10px -5px rgba(0, 0, 0, 0.281);
+    border: 2px solid var(--third-color);
     border-radius: 10px;
-    background-color:rgb(34, 40, 49);
+    transition: all 0.4s cubic-bezier(0.120, 0.800, 0.4, 1);
+    box-shadow: 0px -3px 21px 3px rgba(35, 41, 49, 0.6);
+    background-color: #232931;
+    background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23393e46' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
     display: flex;
     flex-direction: column;
     position: relative;

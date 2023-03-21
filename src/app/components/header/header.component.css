@@ -1,0 +1,17 @@
+.header{
+    position: relative;
+    text-align: center;
+    height: 20vh;
+}
+
+h1{
+    z-index: 999;
+    color:var(--first-color);
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 4px 6px 6px var(--first-color);
+    
+}

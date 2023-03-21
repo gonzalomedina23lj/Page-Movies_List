@@ -16,18 +16,3 @@ export class MovieService {
       .pipe(map((res: any) => res.Search));
   }
 }
-
-// const iniciarServicio = (): void => {
-//   const productos = ["cepillo de dientes", "chocolates", "mermelada"];
-//   const productosNumeros = [1, 2, 3];
-//   const productosEmbolsados = embolsar(productos);
-//   const productosNumerosEmbolsados = embolsar(productosNumeros);
-  
-// };
-
-// const embolsar = <T>(productos: T[]): { material: string; objetos: Observable<T[]> } => {
-//   return {
-//     material: "plastico",
-//     objetos: of(productos),
-//   };
-// };
