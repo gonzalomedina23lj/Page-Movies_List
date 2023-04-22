@@ -1,5 +1,12 @@
+.main{
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 .search{
-    width: 30vw;
+    height: 44px;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +20,8 @@
 }
 
 .search-icon {
-    height: 42px;
-    width: 42px;
+    height: 38px;
+    width: 38px;
     padding-right: 8px;
 }
 
@@ -33,16 +40,12 @@
 
 
 
-.search :hover, :focus{
+.search :hover, :focus {
     outline: 0;
     border-bottom: 2px solid var(--third-color);
     border-radius: 1px;
-    width: 90%;
+    width: 85%;
     transition: 1.5s;
-    background-image: url("../../../assets/icons/bx-search.svg");
-    background-repeat: no-repeat;
-    background-size: 28px 28px;
-    background-position: 95% center;
 }
 
 

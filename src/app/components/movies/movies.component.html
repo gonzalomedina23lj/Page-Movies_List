@@ -1,6 +1,6 @@
 <div class="main container">
   <div class="search">
-    <!-- <img class="search-icon" src="../../../assets/icons/bx-search.svg" alt="search-icon"> -->
+    <img class="search-icon" src="../../../assets/icons/bx-search.svg" alt="search-icon">
     <input [formControl]="searchCharacter" type="text" placeholder="Search..."/>
   </div>
     <ng-container class="container" *ngFor="let movie of movies$ | async">
