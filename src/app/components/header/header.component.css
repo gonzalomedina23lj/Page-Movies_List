@@ -3,21 +3,20 @@
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    height: 15vh;
+    height: calc( 2vw + 120px);
     margin-top: 40px;
     border-top: 1.5px solid var(--fourth-color);
     border-bottom: 1.5px solid var(--fourth-color);
     background-color: #232931;
     background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23393e46' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
     white-space: nowrap;
-
 }
 
 h1{
     margin-top: 10px;
     z-index: 999;
     color:var(--fourth-color);
-    font-size: 4rem;
+    font-size: clamp(40px, 5vw, 68px);
     font-weight: 900;
     letter-spacing: 2px;
     line-height: 1.5;
@@ -41,6 +40,15 @@ h1{
     position: absolute;
     width: 480px;
     left: -10em;
-    top: -42%;
+    top: -45%;
 }
+
+@media (max-width: 960px)  {
+    .logo{
+        display: none;
+    }
+}
+
+
+
 
